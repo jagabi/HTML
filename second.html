@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend>코로나 환자 정보 수집</legend>
+            <div>
+                <label for="p_name">이름: </label>
+                <input type="text" name="p_name" placeholder="이름" autocomplete="on">
+            </div>
+            
+
+            <div>
+                <label for="date">발병 날짜: </label>
+                <input type="date" name="date" id="date" min="1900-01-01" max="2999-12-31" >
+            </div>
+
+            <label for="summary">증상: </label>
+
+            <div>
+                <textarea name="summary" rows="10" cols="40"></textarea>
+            </div>
+
+            <div>
+                <select name="type">
+                    <option value="1">1차 백신</option>
+                    <option value="2">2차 백신</option>
+                    <option value="3">3차 백신</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" value="male" id="male" checked>
+                <label for="male">남성</label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">여성</label>
+            </div>
+            <p>정보 수집에 동의하십니까?</p>
+            <div>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">동의합니다</label>
+            </div>
+
+            
+
+            <div>
+                <button type="submit">제출</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
